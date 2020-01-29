@@ -1,7 +1,7 @@
 FROM debian:latest
 
 RUN apt update
-RUN apt install -y git wget tar
+RUN apt install -y git wget tar make automake autoconf
 
 RUN mkdir -p /opt/riscv
 WORKDIR /opt/riscv
